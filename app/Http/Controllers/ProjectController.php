@@ -19,9 +19,9 @@ class ProjectController extends Controller
         $client = new Client();
 
         $urls = [
-            'https://api.openweathermap.org/data/2.5/forecast?lat=10.8595454&lon=0.2043122&units=metric&lang=fr&appid=0dc5cc8565cac685b90fee81853f1d43',
-            'https://api.openweathermap.org/data/2.5/forecast?lat=9.5488754&lon=1.1977453&units=metric&lang=fr&appid=0dc5cc8565cac685b90fee81853f1d43',
-            'https://api.openweathermap.org/data/2.5/forecast?lat=6.130419&lon=1.215829&units=metric&lang=fr&appid=0dc5cc8565cac685b90fee81853f1d43',
+            'https://api.openweathermap.org/data/2.5/forecast?lat=10.8595454&lon=0.2043122&units=metric&lang=fr&appid='.env('OPENWEATHERAPI_ID'),
+            'https://api.openweathermap.org/data/2.5/forecast?lat=9.5488754&lon=1.1977453&units=metric&lang=fr&appid='.env('OPENWEATHERAPI_ID'),
+            'https://api.openweathermap.org/data/2.5/forecast?lat=6.130419&lon=1.215829&units=metric&lang=fr&appid='.env('OPENWEATHERAPI_ID'),
         ];
 
         $results = array();
@@ -44,7 +44,7 @@ class ProjectController extends Controller
     {
         $client = new Client();
 
-          $url = 'https://api.openweathermap.org/data/2.5/forecast?lat=10.8595454&lon=0.2043122&units=metric&lang=fr&appid=0dc5cc8565cac685b90fee81853f1d43';
+          $url = 'https://api.openweathermap.org/data/2.5/forecast?lat=10.8595454&lon=0.2043122&units=metric&lang=fr&appid='.env('OPENWEATHERAPI_ID');
 
         $results = array();
 
@@ -63,7 +63,7 @@ class ProjectController extends Controller
     {
         $client = new Client();
 
-        $url = 'https://api.openweathermap.org/data/2.5/forecast?lat=9.5488754&lon=1.1977453&units=metric&lang=fr&appid=0dc5cc8565cac685b90fee81853f1d43';
+        $url = 'https://api.openweathermap.org/data/2.5/forecast?lat=9.5488754&lon=1.1977453&units=metric&lang=fr&appid='.env('OPENWEATHERAPI_ID');
 
         $results = array();
 
@@ -82,7 +82,7 @@ class ProjectController extends Controller
     {
         $client = new Client();
 
-        $url = 'https://api.openweathermap.org/data/2.5/forecast?lat=6.130419&lon=1.215829&units=metric&lang=fr&appid=0dc5cc8565cac685b90fee81853f1d43';
+        $url = 'https://api.openweathermap.org/data/2.5/forecast?lat=6.130419&lon=1.215829&units=metric&lang=fr&appid='.env('OPENWEATHERAPI_ID');
 
         $results = array();
 
