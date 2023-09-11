@@ -1,0 +1,16 @@
+[
+    {
+        "name":"Kara",
+        "local_names": {
+            "ar":"كارا",
+            "fr":"Kara",
+            "ko":"카라",
+            "ru":"Кара",
+            "uk":"Кара"
+        },
+        "lat":9.5488754,
+        "lon":1.1977453,
+        "country":"TG",
+        "state":"Kara Region"
+    }
+]
